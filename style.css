@@ -64,11 +64,9 @@ nav a:hover::before { content: "> "; }
 .content a { color: var(--hover); text-decoration: underline; text-underline-offset: 3px; text-decoration-color: rgba(11,77,44,.35); }
 .content a:hover { text-decoration-color: var(--hover); }
 
-/* whole-page hover: list rows and the image get a dark green touch */
+/* hover: list rows get a dark green touch */
 .plain-list li { transition: color .15s; }
 .plain-list li:hover { color: var(--hover); }
-.hero-img { transition: filter .25s; }
-.hero-img:hover { filter: sepia(.4) hue-rotate(60deg) saturate(1.2); }
 
 /* ===== CONTENT ===== */
 .page { display: none; max-width: 640px; }

@@ -13,7 +13,7 @@ const thoughts = [
     slug: "hello-world",
     date: "2026-11-19",
     title: "hello world",
-    image: "images/post1.jpg",   // 🖼️ optional picture for this post
+    image: "assets/thoughts1.jpg",   // 🖼️ optional picture for this post
     body: `
       <p>this is my first post. write whatever you want here.</p>
       <p>every paragraph goes inside its own p tag.</p>
