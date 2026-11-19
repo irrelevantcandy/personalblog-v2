@@ -26,6 +26,7 @@ const thoughts = [
     slug: "the-day-i-lost-my-dad",
     date: "2026-11-19",
     title: "the day i lost my dad",
+    image: "assets/thoughts1.jpg",
     body: `
       <p>i lost my dad a month ago unexpectedly. i thought he was just being hospitalized for the problems in his stomach. at one night, my mom called my sister, telling her to come to the hospital because my dad condition suddenly worsened. </p>
       <p>i couldn't go there because i was sick. that call was too familiar for me. one year ago, i lost my brother in law, and the tone of the calls was very similar. i didn't know how to process my emotions and i just wished that my dad okay, but i cried inside my room after, really scared of the idea that i am going to lose my dad. then i slept.</p>
