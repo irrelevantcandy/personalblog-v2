@@ -4,6 +4,8 @@
    - slug : short name used in the link (no spaces)
    - date : shown in the list
    - title: shown in the list
+   - image: (optional) a picture shown at the top of that post, e.g.
+            "images/post1.jpg". Delete the line if you don't want one.
    - body : the post text. Wrap each paragraph in <p>...</p>
    ===================================================== */
 const thoughts = [
@@ -11,6 +13,7 @@ const thoughts = [
     slug: "hello-world",
     date: "2026-11-19",
     title: "hello world",
+    image: "images/post1.jpg",   // 🖼️ optional picture for this post
     body: `
       <p>this is my first post. write whatever you want here.</p>
       <p>every paragraph goes inside its own p tag.</p>
@@ -54,6 +57,7 @@ function route() {
         <a class="post-back" href="#/thoughts">&larr; back</a>
         <h2 class="post-title">${post.title}</h2>
         <p class="date">${post.date}</p>
+        ${post.image ? `<img class="hero-img" src="${post.image}" alt="${post.title}" onerror="this.remove()">` : ""}
         ${post.body}`;
       show("thought-view");
     } else {
