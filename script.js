@@ -10,7 +10,7 @@
    ===================================================== */
 const thoughts = [
   {
-    slug: "hello-world",
+    slug: "seeking-for-calmness",
     date: "2026-11-19",
     title: "seeking for calmness",
     image: "assets/garden.jpg",   // 🖼️ optional picture for this post
@@ -23,17 +23,23 @@ const thoughts = [
     `
   },
   {
-    slug: "second-post",
+    slug: "the-day-i-lost-my-dad",
     date: "2026-11-19",
-    title: "engineering as a form of art",
+    title: "the day i lost my dad",
     body: `
-      <p></p>
-      <p></p>
-      <p></p>
-      <p></p>
-      <p></p>
+      <p>i lost my dad a month ago unexpectedly. i thought he was just being hospitalized for the problems in his stomach. at one night, my mom called my sister, telling her to come to the hospital because my dad condition suddenly worsened. </p>
+      <p>i couldn't go there because i was sick. that call was too familiar for me. one year ago, i lost my brother in law, and the tone of the calls was very similar. i didn't know how to process my emotions and i just wished that my dad okay, but i cried inside my room after, really scared of the idea that i am going to lose my dad. then i slept.</p>
+      <p>the house helper woke me up from my sleep at 7 am, she never woke me up before. she told me to come to the hospital quicky. my stomach dropped because i know well what's coming but i still don't want to actually believe with what is happening.</p>
+      <p>it was a long drive to the hospital and i knew that it's not a good sign for me to being called there. as a positive person i am, i was still trying to distract myself by talking. </p>
+      <p>when i got into the hospital, i rushed to the hospital room. i knew that something bad is happening, but my mind refused to believe it. my dad could die but at least i still have time to see him and say goodbye to him.</p>
+      <p>when i got inside the hospital room, i saw my mom and my sister crying. then i saw my dad's lifeless body just laying down on the hospital bed. i was shocked. what happened to my dad? he was okay yesterday and then now i lost him?</p>
+      <p>it was like my nightmare comes true, except it wasn't a nightmare. i couldn't wake up from it and breathe in relief that it was just a dream. </p>
+      <p>my dad died.</p>
+      <p>i didn't even say goodbye to him. i didn't even talk to him on the past week because i thought his conditions improved on the hospital and he was about to go home soon.</p>
+      <p>we even had plans to visit a cafe together after his conditions improved, but that day never comes. </p>
+      <p>it's really hard saying this without making me feel really sad.</p>
     `
-  }
+  },
 ];
 
 /* =====================================================
