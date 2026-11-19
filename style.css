@@ -123,7 +123,7 @@ nav a:hover::before { content: "> "; }
   width: 100%;
   max-height: 380px;
   object-fit: cover;
-  border: 1px solid #d9dcd6;
+  /* border: 1px solid #d9dcd6; */
   margin-bottom: 24px;
 }
 .img-placeholder {
