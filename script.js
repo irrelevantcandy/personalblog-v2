@@ -12,21 +12,27 @@ const thoughts = [
   {
     slug: "hello-world",
     date: "2026-11-19",
-    title: "hello world",
-    image: "images/post1.jpg",   // 🖼️ optional picture for this post
+    title: "seeking for calmness",
+    image: "assets/garden.jpg",   // 🖼️ optional picture for this post
     body: `
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-      <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.</p>
-      <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa.</p>
+      <p>hey, welcome to the first page. honestly i don't know what this is going to turn out into.</p>
+      <p>in my head, the whole essence of making this is to seek for calmness against the loud websites out there.</p>
+      <p>the concept of this personal website is the simplicity and calmness, just like the garden.</p>
+      <p>the main focus of this is going to be the contents and the images, instead of the design itself.</p>
+      <p>despite the gradient title, i will keep the design of this website to be minimal and calm.</p>
     `
   },
   {
     slug: "second-post",
-    date: "2026-11-18",
-    title: "another thought",
-    body: `<p>replace me with your own writing.</p>`
+    date: "2026-11-19",
+    title: "engineering as a form of art",
+    body: `
+      <p></p>
+      <p></p>
+      <p></p>
+      <p></p>
+      <p></p>
+    `
   }
 ];
 
