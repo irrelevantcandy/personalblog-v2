@@ -8,7 +8,40 @@
             "images/post1.jpg". Delete the line if you don't want one.
    - body : the post text. Wrap each paragraph in <p>...</p>
    ===================================================== */
-const thoughts = [
+const gear = [
+  {
+    slug: "konigssee-deutschland",
+    cover: "assets/m2.jpg",
+    date: "2026-11-21",
+    title: "konigssee - deutschland",
+    images: [ 
+      "assets/m2.jpg", 
+      "assets/m3.jpg",
+      "assets/m4.jpg",
+      "assets/m5.jpg",
+      "assets/m7.jpg",
+      "assets/m8.jpg", 
+      "assets/m11.jpg",
+      "assets/m13.jpg",
+    ],
+    body: `
+      <p>a solo trip to the bavarian alps</p>
+    `
+  },
+];
+
+   const thoughts = [
+  {
+    slug: "mountains",
+    date: "2026-11-21",
+    title: "mountains",
+    image: "assets/m11.jpg",
+    body: `
+      <p>like a fellow minecrafter</p>
+      <p>i have always drawn into the mountains</p>
+      <p>//</p>
+    `
+  },
   {
     slug: "doomscrolling",
     date: "2026-11-20",
@@ -62,13 +95,26 @@ const thoughts = [
    to edit it unless you want to change how it behaves.
    ===================================================== */
 const titles = {
-  home: "Home", about: "About", gear: "Gear", projects: "Projects",
+  home: "Home", about: "About", gear: "Photos", projects: "Projects",
   videos: "Videos", thoughts: "Thoughts", contact: "Contact"
 };
 
 // build the thoughts list
 document.getElementById("thought-list").innerHTML = thoughts
   .map(t => `<li><span class="date">[${t.date}]</span> <a href="#/thoughts/${t.slug}">${t.title}</a></li>`)
+  .join("");
+
+// build the photos list
+document.getElementById("photo-list").innerHTML = gear
+  .map(p => {
+    const cover = p.cover || (p.images && p.images[0]) || p.image || "";
+    return `<li class="photo-item">
+      <a class="photo-card" href="#/gear/${p.slug}">
+        <span class="photo-head"><span class="date">[${p.date}]</span> <span class="photo-title">${p.title}</span></span>
+        ${cover ? `<img src="${cover}" alt="${p.title}" loading="lazy" onerror="this.remove()">` : ""}
+      </a>
+    </li>`;
+  })
   .join("");
 
 function show(id) {
@@ -92,6 +138,21 @@ function route() {
       show("thought-view");
     } else {
       show("thoughts");
+    }
+  } else if (page === "gear" && parts[1]) {
+    const photo = gear.find(p => p.slug === parts[1]);
+    if (photo) {
+      document.getElementById("photo-view").innerHTML = `
+        <a class="post-back" href="#/gear">&larr; back</a>
+        <h2 class="post-title">${photo.title}</h2>
+        <p class="date">${photo.date}</p>
+        ${photo.body || ""}
+        ${(photo.images || []).map(src =>
+          `<img class="hero-img" src="${src}" alt="${photo.title}" onerror="this.remove()">`
+        ).join("")}`;
+      show("photo-view");
+    } else {
+      show("gear");
     }
   } else {
     show(page);
