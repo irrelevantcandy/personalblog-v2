@@ -10,6 +10,20 @@
    ===================================================== */
 const thoughts = [
   {
+    slug: "doomscrolling",
+    date: "2026-11-20",
+    title: "doomscrolling",
+    image: "assets/greenplants.jpg",
+    body: `
+      <p>the first thing that i do when i woke up is to open twitter</p>
+      <p>i am deeply consumed by the algorithm</p>
+      <p>craving for that dopamine hits on the next scroll</p>
+      <p>i really need to log out from the app</p>
+      <p>and find an alternative to the infinite scroll</p>
+      <p>//</p>
+    `
+  },
+  {
     slug: "seeking-for-calmness",
     date: "2026-11-19",
     title: "seeking for calmness",

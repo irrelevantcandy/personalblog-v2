@@ -48,7 +48,8 @@ body {
 
 /* 🎨 GRADIENT TITLE - the title text itself (the span inside h1) */
 .sidebar h1 span {
-  background: linear-gradient(90deg, #0b4d2c, #2e9e6b, #4086a6, #b2789a, #d87171, #0b4d2c);
+  background: linear-gradient(77deg, #175c3a, #194230, #000000, #000000, #000000, #0d3610);
+  /* background: linear-gradient(90deg, #0b4d2c, #2e9e6b, #4086a6, #b2789a, #d87171, #0b4d2c); */
   background-size: 300% 100%;
   -webkit-background-clip: text;
   background-clip: text;
@@ -63,7 +64,7 @@ body {
 }
 
 /* ▌ BLINKING CURSOR (after the title). It is separate from the gradient text,
-   so it can blink. It also changes color along with the gradient. */
+   so it can blink. It also changes color along with the gradient. 
 .sidebar h1::after {
   content: "_";
   margin-left: 2px;
@@ -76,9 +77,9 @@ body {
   40%  { color: #4086a6; }
   60%  { color: #b2789a; }
   80%  { color: #d87171; }
-}
+} */
 
-nav { display: flex; flex-direction: column; gap: 4px; }
+nav { display: flex; flex-direction: column; gap: 4px; }  
 
 /* ===== LINKS + HOVER (dark green) ===== */
 a {
