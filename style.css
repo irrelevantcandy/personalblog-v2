@@ -136,9 +136,6 @@ nav a:hover::before { content: "> "; }
 .post-title { margin: 0 0 4px; font-size: 22px; }
 .post-back { display: inline-block; margin-bottom: 16px; }
 
-/* ===== PHOTO LIST THUMBNAILS ===== */
-.plain-list .photo-item { margin-bottom: 28px; }
-
 /* ===== PHOTO LIST CARDS ===== */
 #photo-list { padding: 4px 0; }   /* room so the hover lift isn't clipped */
 .plain-list .photo-item { margin-bottom: 20px; }
@@ -148,12 +145,12 @@ nav a:hover::before { content: "> "; }
   width: 100%;
   padding: 14px;
   border: 1px solid #e1e4dc;
-  border-radius: 12px;
+  border-radius: 10px;
   text-decoration: none;
-  transition: transform .2s, border-color .2s;
+  transition: transform .4s, border-color .4s;
 }
 .content a.photo-card:hover {
-  transform: translateY(-3px);
+  transform: translateY(-0.5px);
   border-color: var(--hover);
 }
 
